@@ -1,0 +1,92 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5em;
+  }
+  
+  .username {
+    font-size: 1.2em;
+  }
+  
+  .logout-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .home-main {
+    flex-grow: 1;
+    padding: 1em;
+  }
+  
+  .home-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: #007bff;
+  }
+  
+  .footer-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .footer-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  .welcome-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .home-header, .home-footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logout-button, .footer-button {
+      width: 100%;
+      margin-top: 0.5em;
+    }
+  }
+  
